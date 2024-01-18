@@ -1,0 +1,129 @@
+[gd_scene load_steps=8 format=3 uid="uid://dwmuyj0ivdjnr"]
+
+[ext_resource type="Script" path="res://sceny/UI/Ustawienia/ustawienia.gd" id="1_0yqmg"]
+[ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="2_quqmh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7o5we"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dfjb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2uar"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cyawl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gp6p6"]
+
+[node name="kontenerNaOpcje" type="MarginContainer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+script = ExtResource("1_0yqmg")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="NaUstawienia" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="GłówneOpcje" type="VBoxContainer" parent="NaUstawienia"]
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_constants/separation = 10
+
+[node name="Grafika" type="Button" parent="NaUstawienia/GłówneOpcje"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("2_quqmh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7o5we")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
+text = "Grafika"
+
+[node name="Dźwięk" type="Button" parent="NaUstawienia/GłówneOpcje"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("2_quqmh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7o5we")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
+text = "Dźwięk"
+
+[node name="Sterowanie" type="Button" parent="NaUstawienia/GłówneOpcje"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("2_quqmh")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7o5we")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
+text = "Sterowanie"
+
+[node name="Język" type="Button" parent="NaUstawienia/GłówneOpcje"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("2_quqmh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7o5we")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
+text = "Język"
+
+[node name="Wróć" type="Button" parent="NaUstawienia/GłówneOpcje"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 0
+theme_override_fonts/font = ExtResource("2_quqmh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7o5we")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
+text = "Wróć
+"
+
+[connection signal="pressed" from="NaUstawienia/GłówneOpcje/Grafika" to="." method="_on_grafika_pressed"]
+[connection signal="pressed" from="NaUstawienia/GłówneOpcje/Dźwięk" to="." method="_on_dźwięk_pressed"]
+[connection signal="pressed" from="NaUstawienia/GłówneOpcje/Sterowanie" to="." method="_on_sterowanie_pressed"]
+[connection signal="pressed" from="NaUstawienia/GłówneOpcje/Język" to="." method="_on_język_pressed"]
+[connection signal="pressed" from="NaUstawienia/GłówneOpcje/Wróć" to="." method="_on_wróć_pressed"]

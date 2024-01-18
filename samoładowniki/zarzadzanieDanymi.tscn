@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd5u2tsik742n"]
+
+[ext_resource type="Script" path="res://samoładowniki/zarządzanieDanymi.gd" id="1_5u2g0"]
+
+[node name="zarządzanieDanymi" type="Node"]
+script = ExtResource("1_5u2g0")

@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://6d84et5ngeqf"]
+
+[ext_resource type="Script" path="res://wtyczki/Postacie/GrywalnaPostać.gd" id="1_ouvxh"]
+[ext_resource type="PackedScene" uid="uid://dsvv561h1h23m" path="res://samoładowniki/Pauza.tscn" id="2_4mkl8"]
+[ext_resource type="Texture2D" uid="uid://cl6hol5lf726j" path="res://rysunki/postacie/boskiSędzia/boskiSędziaWMiejscu.png" id="2_rcgoh"]
+[ext_resource type="PackedScene" uid="uid://bc0eq1smevkrg" path="res://obiekty/postacie/BoskiSędzia/InterfejsGracza.tscn" id="3_4gyad"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r3rjw"]
+size = Vector2(17, 64)
+
+[node name="boskiSędzia" type="CharacterBody2D"]
+script = ExtResource("1_ouvxh")
+przyspieszenie = 1000
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_rcgoh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_r3rjw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
+process_callback = 0
+
+[node name="KojociCzasomierz" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="WyświetlaczOPostaci" parent="." instance=ExtResource("3_4gyad")]
+visible = false
+
+[node name="Pauza" parent="." instance=ExtResource("2_4mkl8")]
+offset_left = -288.0
+offset_top = -162.0
+offset_right = -288.0
+offset_bottom = -162.0
+scale = Vector2(0.5, 0.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4

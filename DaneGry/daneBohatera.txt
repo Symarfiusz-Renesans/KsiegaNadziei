@@ -1,0 +1,11 @@
+siła: 0
+celność: 0
+energia: 0
+zaradność: 0
+szybkość: 0
+zwinność: 0
+sumienie: 0
+psychika: 0
+harmonia: 0
+opanowanie: 0
+skuteczność: 0

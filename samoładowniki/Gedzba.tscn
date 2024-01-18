@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cje84vwgd4e7u"]
+
+[ext_resource type="Script" path="res://samoładowniki/Gędźba.gd" id="1_ti5lu"]
+
+[node name="Gędźba" type="Node"]
+script = ExtResource("1_ti5lu")
+
+[node name="WęzełOdGędźby" type="AudioStreamPlayer" parent="."]
+bus = &"Gędźba"
+
+[node name="WęzełOdEfektów" type="AudioStreamPlayer" parent="."]
+bus = &"Efekty"

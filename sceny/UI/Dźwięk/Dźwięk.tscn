@@ -1,0 +1,190 @@
+[gd_scene load_steps=13 format=3 uid="uid://c5fawhj84gx6k"]
+
+[ext_resource type="Script" path="res://sceny/UI/Dźwięk/Dźwięk.gd" id="1_8eqq1"]
+[ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="1_cmrej"]
+[ext_resource type="Texture2D" uid="uid://bjyo61wfmt2iy" path="res://rysunki/UI/suwak/chwytak.png" id="2_7ambj"]
+[ext_resource type="Texture2D" uid="uid://d0husa20ddpdr" path="res://rysunki/UI/suwak/chwytakWzięty.png" id="3_25wha"]
+[ext_resource type="Texture2D" uid="uid://bqyu50cvhry28" path="res://rysunki/UI/suwak/suwak.png" id="4_aoqqn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bjqyh"]
+texture = ExtResource("4_aoqqn")
+texture_margin_left = 5.0
+texture_margin_top = 15.0
+texture_margin_right = 5.0
+modulate_color = Color(0.313726, 0.313726, 0.313726, 1)
+draw_center = false
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_osalr"]
+texture = ExtResource("4_aoqqn")
+texture_margin_left = 5.0
+texture_margin_top = 15.0
+texture_margin_right = 5.0
+modulate_color = Color(0.313726, 0.313726, 0.313726, 1)
+draw_center = false
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o4xyo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jkhhi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3bk3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85w1e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wfw78"]
+
+[node name="Język" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8eqq1")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_right = 200
+
+[node name="KontenerGłówny" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="KontenerNaSuwakGGłównej" type="HBoxContainer" parent="ColorRect/MarginContainer/KontenerGłówny"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="głośnośćGłówna" type="Label" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGłównej"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_cmrej")
+text = "Głośność główna"
+horizontal_alignment = 2
+
+[node name="suwakGGłówna" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGłównej"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_icons/grabber = ExtResource("2_7ambj")
+theme_override_icons/grabber_highlight = ExtResource("3_25wha")
+theme_override_styles/slider = SubResource("StyleBoxTexture_bjqyh")
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[node name="KontenerNaSuwakGGędźby" type="HBoxContainer" parent="ColorRect/MarginContainer/KontenerGłówny"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="głośnośćGędźby" type="Label" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGędźby"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_cmrej")
+text = "Głośność Muzyki / Gędźby"
+horizontal_alignment = 2
+
+[node name="suwakGGędźby" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGędźby"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_icons/grabber = ExtResource("2_7ambj")
+theme_override_icons/grabber_highlight = ExtResource("3_25wha")
+theme_override_styles/slider = SubResource("StyleBoxTexture_osalr")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="KontenerNaSuwakGDźwięków" type="HBoxContainer" parent="ColorRect/MarginContainer/KontenerGłówny"]
+layout_direction = 1
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="głośnośćDźwięków" type="Label" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGDźwięków"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_cmrej")
+text = "Głośność Dżwięków"
+horizontal_alignment = 2
+
+[node name="suwakGDźwięków" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGDźwięków"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_icons/grabber = ExtResource("2_7ambj")
+theme_override_icons/grabber_highlight = ExtResource("3_25wha")
+theme_override_styles/slider = SubResource("StyleBoxTexture_osalr")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="KontenerNaPotwierdzenie" type="HBoxContainer" parent="ColorRect/MarginContainer/KontenerGłówny"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="Powróć" type="Button" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaPotwierdzenie"]
+custom_minimum_size = Vector2(0, 50)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("1_cmrej")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o4xyo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jkhhi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3bk3j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_85w1e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wfw78")
+text = "Powróć"
+alignment = 2
+icon_alignment = 1
+expand_icon = true
+
+[node name="Potwierdź" type="Button" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaPotwierdzenie"]
+custom_minimum_size = Vector2(0, 50)
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("1_cmrej")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o4xyo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jkhhi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3bk3j")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_85w1e")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wfw78")
+alignment = 0
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="value_changed" from="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGłównej/suwakGGłówna" to="." method="_on_suwak_ggłówna_value_changed"]
+[connection signal="value_changed" from="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGędźby/suwakGGędźby" to="." method="_on_suwak_ggędźby_value_changed"]
+[connection signal="value_changed" from="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGDźwięków/suwakGDźwięków" to="." method="_on_suwak_gdźwięków_value_changed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/KontenerGłówny/KontenerNaPotwierdzenie/Powróć" to="." method="_on_powróć_pressed"]

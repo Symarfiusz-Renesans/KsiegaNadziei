@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc0eq1smevkrg"]
+
+[ext_resource type="Script" path="res://obiekty/postacie/BoskiSędzia/InterfejsGracza.gd" id="1_c2byk"]
+[ext_resource type="Texture2D" uid="uid://brpjkbyambgjj" path="res://rysunki/UI/interfejsGracza/ui-podNim.png" id="2_hsp50"]
+[ext_resource type="Script" path="res://obiekty/postacie/BoskiSędzia/wyświetlaczInnychBroni.gd" id="3_qi1ag"]
+[ext_resource type="Texture2D" uid="uid://0olkn802c3m" path="res://rysunki/UI/interfejsGracza/ui-wygląd.png" id="4_c50jf"]
+
+[node name="WyświetlaczOPostaci" type="CanvasLayer"]
+script = ExtResource("1_c2byk")
+
+[node name="wyświetlaczInnychBroni" type="TextureRect" parent="."]
+offset_left = 477.0
+offset_top = 540.0
+offset_right = 677.0
+offset_bottom = 652.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_default_cursor_shape = 5
+texture = ExtResource("2_hsp50")
+script = ExtResource("3_qi1ag")
+
+[node name="głównyWyświetlacz" type="TextureRect" parent="."]
+light_mask = 524290
+visibility_layer = 524289
+anchors_preset = -1
+anchor_top = -0.125
+anchor_right = 0.5
+offset_top = 567.0
+offset_right = 576.0
+offset_bottom = 648.0
+texture = ExtResource("4_c50jf")
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="PrzyciskGraj" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_top = 108.0
+offset_right = 96.0
+offset_bottom = 162.0
+
+[node name="PrzyciskStój" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 108.0
+offset_right = 192.0
+offset_bottom = 162.0
+
+[node name="PrzyciskCofnij" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 108.0
+offset_right = 288.0
+offset_bottom = 162.0
+
+[node name="PrzyciskPrzedmiot1" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 108.0
+offset_right = 896.0
+offset_bottom = 162.0
+
+[node name="PrzyciskPrzedmiot2" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 108.0
+offset_right = 1024.0
+offset_bottom = 162.0
+
+[node name="PrzyciskPrzedmiot3" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 108.0
+offset_right = 1152.0
+offset_bottom = 162.0
+
+[node name="używanaBroń" type="TextureButton" parent="głównyWyświetlacz"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.333
+anchor_top = 0.333
+anchor_right = 0.667
+anchor_bottom = 1.0
+offset_left = 0.384003
+offset_top = 0.0540009
+offset_right = -0.384033
+stretch_mode = 0
+
+[connection signal="mouse_entered" from="wyświetlaczInnychBroni" to="wyświetlaczInnychBroni" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="wyświetlaczInnychBroni" to="wyświetlaczInnychBroni" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="głównyWyświetlacz/używanaBroń" to="." method="_on_używana_broń_mouse_entered"]
+[connection signal="mouse_exited" from="głównyWyświetlacz/używanaBroń" to="." method="_on_używana_broń_mouse_exited"]

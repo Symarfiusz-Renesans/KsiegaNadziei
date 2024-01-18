@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://cb8mkg2ucddcq"]
+
+[ext_resource type="Script" path="res://obiekty/ciemnyKorytarz/ciemnyKorytarz.gd" id="1_eg2tf"]
+[ext_resource type="TileSet" uid="uid://bs8c7gnpc1lyi" path="res://rysunki/zbiórPłyt/magazyn1/magazyn1.tres" id="2_mer7n"]
+[ext_resource type="Texture2D" uid="uid://bg5hjmsxpfup8" path="res://rysunki/pomocnicze/naciśnijE.png" id="3_vosy5"]
+[ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="4_1py5e"]
+[ext_resource type="Texture2D" uid="uid://dy7x5e4ukamr2" path="res://rysunki/postacie/boskiSędzia/oczy.png" id="5_6udfq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dfwq"]
+size = Vector2(80, 84)
+
+[node name="ciemnyKorytarz" type="Node2D"]
+position = Vector2(0, -128)
+script = ExtResource("1_eg2tf")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_mer7n")
+cell_quadrant_size = 32
+format = 2
+layer_0/tile_data = PackedInt32Array(65536, 262144, 4)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(64, 88)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_2dfwq")
+
+[node name="NaciśnijE" type="Sprite2D" parent="."]
+position = Vector2(43, 25)
+texture = ExtResource("3_vosy5")
+
+[node name="Label" type="Label" parent="NaciśnijE"]
+offset_left = 10.0
+offset_top = -5.0
+offset_right = 52.0
+offset_bottom = 13.0
+theme_override_fonts/font = ExtResource("4_1py5e")
+theme_override_font_sizes/font_size = 8
+text = "Wejdź"
+metadata/_edit_use_anchors_ = true
+
+[node name="Oczy" type="Sprite2D" parent="."]
+position = Vector2(64, 69)
+texture = ExtResource("5_6udfq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

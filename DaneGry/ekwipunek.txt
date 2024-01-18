@@ -1,0 +1,7 @@
+brońGłówna:
+brońPoboczna:
+brońBiała:
+przedmiot1:
+przedmiot2:
+przedmiot3:
+-----------

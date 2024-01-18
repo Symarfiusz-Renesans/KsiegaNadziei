@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=3 uid="uid://dsvv561h1h23m"]
+
+[ext_resource type="Script" path="res://samoładowniki/Pauza.gd" id="1_evmxy"]
+[ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="2_07nvt"]
+[ext_resource type="PackedScene" uid="uid://dwmuyj0ivdjnr" path="res://sceny/UI/Ustawienia/Ustawienia.tscn" id="2_88b6f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ftst"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4ogx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1kwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l33q5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aslep"]
+
+[node name="Pauza" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_evmxy")
+
+[node name="kontenerNaOpcje" parent="." instance=ExtResource("2_88b6f")]
+layout_mode = 0
+
+[node name="kontenerNaPauzę" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="ColorRect" type="ColorRect" parent="kontenerNaPauzę"]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="kontenerNaPauzę"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Wróć" type="Button" parent="kontenerNaPauzę/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_07nvt")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3ftst")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
+text = "Graj Dalej
+"
+
+[node name="Ustawienia" type="Button" parent="kontenerNaPauzę/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_07nvt")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3ftst")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
+text = "Ustawienia"
+
+[node name="Wyjdź" type="Button" parent="kontenerNaPauzę/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_constants/h_separation = 38
+theme_override_fonts/font = ExtResource("2_07nvt")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3ftst")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
+text = "Wyjdź z Gry"
+
+[connection signal="pressed" from="kontenerNaPauzę/VBoxContainer/Wróć" to="." method="_on_wróć_pressed"]
+[connection signal="pressed" from="kontenerNaPauzę/VBoxContainer/Ustawienia" to="." method="_on_ustawienia_pressed"]
+[connection signal="pressed" from="kontenerNaPauzę/VBoxContainer/Wyjdź" to="." method="_on_wyjdź_pressed"]

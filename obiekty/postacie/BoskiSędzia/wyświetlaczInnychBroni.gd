@@ -30,6 +30,3 @@ func _on_mouse_entered():
 
 func _on_mouse_exited():
 	cofać = true
-
-func _on_broń1_pressed():
-	pass # Replace with function body.

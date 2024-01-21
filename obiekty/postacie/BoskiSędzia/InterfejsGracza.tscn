@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://bc0eq1smevkrg"]
+[gd_scene load_steps=9 format=3 uid="uid://bc0eq1smevkrg"]
 
 [ext_resource type="Script" path="res://obiekty/postacie/BoskiSędzia/InterfejsGracza.gd" id="1_c2byk"]
 [ext_resource type="Texture2D" uid="uid://brpjkbyambgjj" path="res://rysunki/UI/interfejsGracza/ui-podNim.png" id="2_hsp50"]
 [ext_resource type="Script" path="res://obiekty/postacie/BoskiSędzia/wyświetlaczInnychBroni.gd" id="3_qi1ag"]
 [ext_resource type="Texture2D" uid="uid://0olkn802c3m" path="res://rysunki/UI/interfejsGracza/ui-wygląd.png" id="4_c50jf"]
+[ext_resource type="Texture2D" uid="uid://cog17ei6s2sg6" path="res://rysunki/UI/interfejsGracza/Commando.png" id="4_wm7q7"]
+[ext_resource type="Texture2D" uid="uid://boija85hjrbme" path="res://rysunki/UI/interfejsGracza/Bagnet.png" id="5_trvpa"]
+[ext_resource type="Texture2D" uid="uid://bo1r4da8eryix" path="res://rysunki/UI/interfejsGracza/787-short.png" id="7_3qkxu"]
+[ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="8_be3oi"]
 
 [node name="WyświetlaczOPostaci" type="CanvasLayer"]
 script = ExtResource("1_c2byk")
@@ -29,12 +33,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture_normal = ExtResource("4_wm7q7")
+stretch_mode = 3
 
 [node name="broń2" type="TextureButton" parent="wyświetlaczInnychBroni"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 0.5
+texture_normal = ExtResource("5_trvpa")
+stretch_mode = 3
 
 [node name="głównyWyświetlacz" type="TextureRect" parent="."]
 light_mask = 3
@@ -101,10 +109,42 @@ offset_top = -35.964
 offset_right = -0.383972
 stretch_mode = 0
 
+[node name="UżywanaBroń" type="Sprite2D" parent="głównyWyświetlacz"]
+position = Vector2(531, 40.0002)
+scale = Vector2(2, 2)
+texture = ExtResource("7_3qkxu")
+
+[node name="NazwaBroni" type="Label" parent="głównyWyświetlacz"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.0
+offset_top = -38.0
+offset_right = 69.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("8_be3oi")
+text = "787 Short"
+horizontal_alignment = 1
+
+[node name="Amunicja" type="Label" parent="głównyWyświetlacz"]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 18.0002
+offset_right = 747.0
+offset_bottom = 51.0002
+theme_override_fonts/font = ExtResource("8_be3oi")
+text = "6 / 24"
+
 [connection signal="mouse_entered" from="wyświetlaczInnychBroni/broń1" to="wyświetlaczInnychBroni" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="wyświetlaczInnychBroni/broń1" to="wyświetlaczInnychBroni" method="_on_mouse_exited"]
-[connection signal="pressed" from="wyświetlaczInnychBroni/broń1" to="wyświetlaczInnychBroni" method="_on_broń1_pressed"]
+[connection signal="pressed" from="wyświetlaczInnychBroni/broń1" to="." method="_on_broń1_pressed"]
 [connection signal="mouse_entered" from="wyświetlaczInnychBroni/broń2" to="wyświetlaczInnychBroni" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="wyświetlaczInnychBroni/broń2" to="wyświetlaczInnychBroni" method="_on_mouse_exited"]
+[connection signal="pressed" from="wyświetlaczInnychBroni/broń2" to="." method="_on_broń2_pressed"]
 [connection signal="mouse_entered" from="głównyWyświetlacz/używanaBroń" to="." method="_on_używana_broń_mouse_entered"]
 [connection signal="mouse_exited" from="głównyWyświetlacz/używanaBroń" to="." method="_on_używana_broń_mouse_exited"]

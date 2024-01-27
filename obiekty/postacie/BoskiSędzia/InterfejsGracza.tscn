@@ -110,7 +110,7 @@ offset_right = -0.383972
 stretch_mode = 0
 
 [node name="UżywanaBroń" type="Sprite2D" parent="głównyWyświetlacz"]
-position = Vector2(531, 40.0002)
+position = Vector2(577, 41.0002)
 scale = Vector2(2, 2)
 texture = ExtResource("7_3qkxu")
 
@@ -121,10 +121,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -67.0
-offset_top = -38.0
-offset_right = 69.0
-offset_bottom = -5.0
+offset_left = -163.0
+offset_top = -37.0
+offset_right = -27.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("8_be3oi")
@@ -133,10 +133,10 @@ horizontal_alignment = 1
 
 [node name="Amunicja" type="Label" parent="głównyWyświetlacz"]
 layout_mode = 0
-offset_left = 667.0
-offset_top = 18.0002
-offset_right = 747.0
-offset_bottom = 51.0002
+offset_left = 660.0
+offset_top = 71.0002
+offset_right = 740.0
+offset_bottom = 104.0
 theme_override_fonts/font = ExtResource("8_be3oi")
 text = "6 / 24"
 

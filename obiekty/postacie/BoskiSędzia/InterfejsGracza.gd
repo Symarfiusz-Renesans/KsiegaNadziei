@@ -74,3 +74,13 @@ func _on_broń1_pressed():
 	
 	nazwa_broni.text = używanaBroń[1]
 	amunicja.text = używanaBroń[2]
+
+
+func _on_przycisk_graj_pressed():
+	Gedzba.grajGędźbę()
+
+func _on_przycisk_stój_pressed():
+	Gedzba.zatrzymajGędźbę()
+
+func _on_przycisk_cofnij_pressed():
+	Gedzba.cofnijGędźbę()

@@ -5,8 +5,18 @@ var efekt = load("res://Gędźba/mountOven.mp3")
 
 @onready var węzełOdGędźby = $"WęzełOdGędźby"
 @onready var węzełOdEfektów = $"WęzełOdEfektów"
-# Called when the node enters the scene tree for the first time.
+
+var zatrzymane = 0
+
 func puśćGędźbę():
-	
 	węzełOdGędźby.stream = gędźba
 	węzełOdGędźby.play()
+
+func grajGędźbę():
+	węzełOdGędźby.stream = gędźba
+	węzełOdGędźby.play()
+	węzełOdGędźby.seek(zatrzymane)
+
+func zatrzymajGędźbę():
+	zatrzymane = węzełOdGędźby.get_playback_position()
+	węzełOdGędźby.stop()

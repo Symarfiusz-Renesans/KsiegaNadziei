@@ -20,3 +20,6 @@ func grajGędźbę():
 func zatrzymajGędźbę():
 	zatrzymane = węzełOdGędźby.get_playback_position()
 	węzełOdGędźby.stop()
+
+func cofnijGędźbę():
+	pass

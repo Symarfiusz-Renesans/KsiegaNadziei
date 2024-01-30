@@ -1,7 +1,8 @@
-wybranyJęzyk: Magyarul
+wybranyJęzyk: Polski
 głośnośćGłówna: 0.25
 głośnośćGędźby: 0.50
 głośnośćEfektów: 0.50
+
 
 
 

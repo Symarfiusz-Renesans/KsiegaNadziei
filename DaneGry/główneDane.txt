@@ -1,7 +1,23 @@
-wybranyJęzyk: Deutsch
-głośnośćGłówna: 0.50
+wybranyJęzyk: Magyarul
+głośnośćGłówna: 0.25
 głośnośćGędźby: 0.50
 głośnośćEfektów: 0.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

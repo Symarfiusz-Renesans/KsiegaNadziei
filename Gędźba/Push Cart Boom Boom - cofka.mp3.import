@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cqio4oxsml0sv"
+path="res://.godot/imported/Push Cart Boom Boom - cofka.mp3-60bd6452425cd5123e8ee36d1a6e33a6.mp3str"
+
+[deps]
+
+source_file="res://Gędźba/Push Cart Boom Boom - cofka.mp3"
+dest_files=["res://.godot/imported/Push Cart Boom Boom - cofka.mp3-60bd6452425cd5123e8ee36d1a6e33a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

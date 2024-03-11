@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Gedzba="*res://samoładowniki/Gedzba.tscn"
 ZarzadzanieDanymi="*res://samoładowniki/zarzadzanieDanymi.tscn"
+SoundManager="*res://addons/sound_manager/sound_manager.gd"
 
 [display]
 
@@ -27,7 +28,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/gaea/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/sound_manager/plugin.cfg")
 
 [input]
 

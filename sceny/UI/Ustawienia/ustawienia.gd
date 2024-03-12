@@ -1,9 +1,15 @@
 extends MarginContainer
+var język
+var ustawienia
 
-
-# Called when the node enters the scene tree for the first time.
+func _ready():
+	ustawienia = $NaUstawienia
+	język = $"Język"
+	język.hide()
+	
 func _on_język_pressed():
-	get_tree().change_scene_to_file("res://sceny/UI/Język/Język.tscn")
+	język.show()
+	ustawienia.hide()
 
 func _on_dźwięk_pressed():
 	get_tree().change_scene_to_file("res://sceny/UI/Dźwięk/Dźwięk.tscn")

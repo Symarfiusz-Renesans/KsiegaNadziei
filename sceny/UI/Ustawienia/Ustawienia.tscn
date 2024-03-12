@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dwmuyj0ivdjnr"]
+[gd_scene load_steps=9 format=3 uid="uid://dwmuyj0ivdjnr"]
 
 [ext_resource type="Script" path="res://sceny/UI/Ustawienia/ustawienia.gd" id="1_0yqmg"]
+[ext_resource type="PackedScene" uid="uid://buopio5cmk7b4" path="res://sceny/UI/Język/Język.tscn" id="2_75cw2"]
 [ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="2_quqmh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7o5we"]
@@ -22,6 +23,9 @@ script = ExtResource("1_0yqmg")
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 2
 color = Color(0, 0, 0, 1)
+
+[node name="Język" parent="." instance=ExtResource("2_75cw2")]
+layout_mode = 2
 
 [node name="NaUstawienia" type="VBoxContainer" parent="."]
 layout_mode = 2

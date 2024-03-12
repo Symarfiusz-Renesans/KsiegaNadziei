@@ -3,7 +3,6 @@ extends Control
 @onready var kontener_na_pauzę = $"kontenerNaPauzę"
 @onready var kontener_na_opcje = $kontenerNaOpcje
 
-
 func _process(_delta):
 	if Input.is_action_just_pressed("pauza"):
 		self.visible = !self.visible

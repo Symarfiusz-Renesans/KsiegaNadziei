@@ -18,7 +18,7 @@ func _ready():
 
 
 func _on_powróć_pressed():
-	get_tree().change_scene_to_file("res://sceny/UI/KartaGłówna.tscn")
+	self.hide()
 
 func _on_suwak_gdźwięków_value_changed(value):
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Efekty"), linear_to_db(value))

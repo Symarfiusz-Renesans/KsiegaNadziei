@@ -15,5 +15,5 @@ func _on_potwierdź_pressed():
 
 
 func _on_powróć_pressed():
-	get_tree().change_scene_to_file("res://sceny/UI/KartaGłówna.tscn")
+	self.hide()
 

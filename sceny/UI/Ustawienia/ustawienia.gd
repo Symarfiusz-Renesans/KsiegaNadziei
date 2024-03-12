@@ -1,18 +1,23 @@
 extends MarginContainer
-var język
-var ustawienia
+@onready var język  = $"Język"
+@onready var ustawienia = $NaUstawienia
+@onready var dźwięk = $"Dźwięk"
 
 func _ready():
-	ustawienia = $NaUstawienia
-	język = $"Język"
 	język.hide()
+	dźwięk.hide()
+	
+func _process(delta):
+	if język.visible == false and dźwięk.visible == false:
+		ustawienia.show()
 	
 func _on_język_pressed():
-	język.show()
 	ustawienia.hide()
+	język.show()
 
 func _on_dźwięk_pressed():
-	get_tree().change_scene_to_file("res://sceny/UI/Dźwięk/Dźwięk.tscn")
+	ustawienia.hide()
+	dźwięk.show()
 
 func _on_grafika_pressed():
 	pass # Replace with function body.

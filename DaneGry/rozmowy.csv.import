@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cwfbj38usw2x6"
+
+[deps]
+
+files=["res://DaneGry/rozmowy.en.translation"]
+
+source_file="res://DaneGry/rozmowy.csv"
+dest_files=["res://DaneGry/rozmowy.en.translation"]
+
+[params]
+
+compress=true
+delimiter=0

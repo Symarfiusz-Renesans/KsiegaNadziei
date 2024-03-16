@@ -2,11 +2,9 @@ extends Control
 
 @onready var color_rect = $ColorRect
 @onready var margin_container = $ColorRect/MarginContainer
-
-var zawartość
+@onready var zawartość = $ColorRect/MarginContainer
 
 func _ready():
-	zawartość = $ColorRect/MarginContainer
 	Gedzba.puśćGędźbę()
 
 func _on_graj_pressed():
@@ -19,7 +17,7 @@ func _on_graj_pressed():
 #		get_tree().set_auto_accept_quit(false)
 
 func _on_opcje_pressed():
-	zawartość.ustalDane("lewo")
+	zawartość.ustalDane("prawo")
 
 
 func _on_twórcy_pressed():
@@ -33,8 +31,7 @@ func _on_wyjdź_pressed():
 
 
 func _on_wróć_pressed():
-	zawartość.ustalDane("prawo")
-	pass # Replace with function body.
+	zawartość.ustalDane("lewo")
 
 
 func _on_język_pressed():
@@ -51,3 +48,7 @@ func _on_grafika_pressed():
 
 func _on_sterowanie_pressed():
 	pass # Replace with function body.
+
+
+func _on_kontener_na_opcje_2_w_lewo():
+	_on_wróć_pressed()

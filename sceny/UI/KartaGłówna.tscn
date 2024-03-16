@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://ce3luncfxx6sh"]
+[gd_scene load_steps=12 format=3 uid="uid://ce3luncfxx6sh"]
 
 [ext_resource type="Script" path="res://sceny/UI/obsługaPrzycisków.gd" id="1_t5hef"]
 [ext_resource type="Script" path="res://sceny/UI/przemieśćMenu.gd" id="2_k8b4v"]
 [ext_resource type="FontFile" uid="uid://b01nhi7csnkl8" path="res://Judical.ttf" id="3_hcr34"]
 [ext_resource type="Texture2D" uid="uid://byb4yvluq0anj" path="res://rysunki/logo/logo.png" id="4_iqmgy"]
+[ext_resource type="PackedScene" uid="uid://dwmuyj0ivdjnr" path="res://sceny/UI/Ustawienia/Ustawienia.tscn" id="5_6vxry"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tyol2"]
 
@@ -150,115 +151,12 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
 text = "Wyjdź"
 
-[node name="kontenerNaOpcje" type="MarginContainer" parent="ColorRect/MarginContainer/HBoxContainer"]
+[node name="kontenerNaOpcje2" parent="ColorRect/MarginContainer/HBoxContainer" instance=ExtResource("5_6vxry")]
 layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="NaUstawienia" type="VBoxContainer" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje"]
-layout_mode = 2
-size_flags_vertical = 4
-
-[node name="GłówneOpcje" type="VBoxContainer" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia"]
-layout_direction = 1
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 8
-theme_override_constants/separation = 10
-
-[node name="Grafika" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 0
-theme_override_constants/h_separation = 0
-theme_override_fonts/font = ExtResource("3_hcr34")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1fdl1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Grafika"
-
-[node name="Dźwięk" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 0
-theme_override_constants/h_separation = 0
-theme_override_fonts/font = ExtResource("3_hcr34")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1fdl1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Dźwięk"
-
-[node name="Sterowanie" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_constants/outline_size = 0
-theme_override_constants/h_separation = 0
-theme_override_fonts/font = ExtResource("3_hcr34")
-theme_override_font_sizes/font_size = 16
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1fdl1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Sterowanie"
-
-[node name="Język" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_constants/outline_size = 0
-theme_override_constants/h_separation = 0
-theme_override_fonts/font = ExtResource("3_hcr34")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1fdl1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Język"
-
-[node name="Wróć" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(0.588235, 0.588235, 0.588235, 1)
-theme_override_constants/outline_size = 0
-theme_override_constants/h_separation = 0
-theme_override_fonts/font = ExtResource("3_hcr34")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1fdl1")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Wróć
-"
 
 [connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje/Graj" to="." method="_on_graj_pressed"]
 [connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje/Opcje" to="." method="_on_opcje_pressed"]
+[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje/Opcje" to="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje2" method="_on_opcje_pressed"]
 [connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje/Twórcy" to="." method="_on_twórcy_pressed"]
 [connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje/Wyjdź" to="." method="_on_wyjdź_pressed"]
-[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje/Grafika" to="." method="_on_grafika_pressed"]
-[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje/Dźwięk" to="." method="_on_dźwięk_pressed"]
-[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje/Sterowanie" to="." method="_on_sterowanie_pressed"]
-[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje/Język" to="." method="_on_język_pressed"]
-[connection signal="pressed" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje/NaUstawienia/GłówneOpcje/Wróć" to="." method="_on_wróć_pressed"]
+[connection signal="wLewo" from="ColorRect/MarginContainer/HBoxContainer/kontenerNaOpcje2" to="." method="_on_kontener_na_opcje_2_w_lewo"]

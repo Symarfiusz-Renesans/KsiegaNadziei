@@ -3,6 +3,10 @@ extends MarginContainer
 @onready var ustawienia = $NaUstawienia
 @onready var dźwięk = $"Dźwięk"
 
+signal wLewo 
+
+var czyWKarcieGłównej: bool = false
+
 func _ready():
 	język.hide()
 	dźwięk.hide()
@@ -26,4 +30,11 @@ func _on_sterowanie_pressed():
 	pass # Replace with function body.
 
 func _on_wróć_pressed():
-	self.visible = false
+	if czyWKarcieGłównej:
+		wLewo.emit()
+	else:
+		self.visible = false
+
+
+func _on_opcje_pressed():
+	czyWKarcieGłównej = true

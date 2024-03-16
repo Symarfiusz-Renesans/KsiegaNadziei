@@ -14,7 +14,7 @@ func _process(delta):
 			"dół":
 				self.position.y += prędkość*delta
 				prędkość += 5
-			"lewo":
+			"prawo":
 				if(-drogaX < self.position.x):
 					self.position.x -= prędkość*delta
 				else:
@@ -26,7 +26,7 @@ func _process(delta):
 						prędkość = 0
 				else:
 					prędkość += 5
-			"prawo":
+			"lewo":
 				if(0 > self.position.x):
 					self.position.x += prędkość*delta
 				else:

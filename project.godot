@@ -116,7 +116,8 @@ przedmiotPoboczny3={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://DaneGry/rozmowy.csv")
+locale/translation_remaps={}
+locale/translations=PackedStringArray("res://DaneGry/tłumaczeniaUI.de.translation", "res://DaneGry/tłumaczeniaUI.en.translation", "res://DaneGry/tłumaczeniaUI.eo.translation", "res://DaneGry/tłumaczeniaUI.hu.translation", "res://DaneGry/tłumaczeniaUI.pl.translation")
 
 [physics]
 

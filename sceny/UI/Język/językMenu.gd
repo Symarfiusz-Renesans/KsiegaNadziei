@@ -22,7 +22,7 @@ func _on_potwierdź_pressed():
 			TranslationServer.set_locale("hu")
 		"Esperanta":
 			TranslationServer.set_locale("eo")
-	print(TranslationServer.get_locale)
+	print(TranslationServer.get_locale())
 	_on_powróć_pressed()
 
 

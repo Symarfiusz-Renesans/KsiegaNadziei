@@ -11,6 +11,13 @@ config_version=5
 [application]
 
 config/name="Księga Nadziei"
+config/name_localized={
+"de": "",
+"en": "",
+"eo": "",
+"hu": "",
+"pl": ""
+}
 run/main_scene="res://sceny/UI/KartaGłówna.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
@@ -117,7 +124,8 @@ przedmiotPoboczny3={
 [internationalization]
 
 locale/translation_remaps={}
-locale/translations=PackedStringArray("res://DaneGry/tłumaczeniaUI.de.translation", "res://DaneGry/tłumaczeniaUI.en.translation", "res://DaneGry/tłumaczeniaUI.eo.translation", "res://DaneGry/tłumaczeniaUI.hu.translation", "res://DaneGry/tłumaczeniaUI.pl.translation")
+locale/translations=PackedStringArray("res://DaneGry/tłumaczenia/tłumaczeniaUI.de.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.en.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.eo.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.hu.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.pl.translation")
+locale/locale_filter_mode=0
 
 [physics]
 

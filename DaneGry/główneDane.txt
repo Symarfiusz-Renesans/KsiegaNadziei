@@ -1,7 +1,88 @@
-wybranyJęzyk: Polski
+wybranyJęzyk: Esperanta
 głośnośćGłówna: 0.20
 głośnośćGędźby: 0.50
 głośnośćEfektów: 0.50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

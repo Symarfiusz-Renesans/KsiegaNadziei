@@ -5,6 +5,8 @@ extends Control
 @onready var zawartość = $ColorRect/MarginContainer
 
 func _ready():
+	TranslationServer.set_locale("pl")
+	print(TranslationServer.get_locale())
 	Gedzba.puśćGędźbę()
 
 func _on_graj_pressed():

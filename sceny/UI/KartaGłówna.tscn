@@ -95,7 +95,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Graj"
+text = "GRAJ"
 
 [node name="Opcje" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje"]
 layout_mode = 2
@@ -113,7 +113,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Opcje"
+text = "USTAWIENIA"
 
 [node name="Twórcy" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje"]
 layout_mode = 2
@@ -131,7 +131,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Twórcy"
+text = "TWÓRCY"
 
 [node name="Wyjdź" type="Button" parent="ColorRect/MarginContainer/HBoxContainer/kontenerNamenu/naMenu/GłówneOpcje"]
 layout_mode = 2
@@ -149,7 +149,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_hkne8")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_vdvlo")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_b4m8o")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_o62te")
-text = "Wyjdź"
+text = "WYJDŹ"
 
 [node name="kontenerNaOpcje2" parent="ColorRect/MarginContainer/HBoxContainer" instance=ExtResource("5_6vxry")]
 layout_mode = 2

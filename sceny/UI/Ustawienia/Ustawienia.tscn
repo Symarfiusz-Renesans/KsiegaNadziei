@@ -26,9 +26,11 @@ layout_mode = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Język" parent="." instance=ExtResource("2_75cw2")]
+visible = false
 layout_mode = 2
 
 [node name="Dźwięk" parent="." instance=ExtResource("2_hsg65")]
+visible = false
 layout_mode = 2
 
 [node name="NaUstawienia" type="VBoxContainer" parent="."]

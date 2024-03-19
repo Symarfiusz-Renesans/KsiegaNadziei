@@ -1,7 +1,12 @@
-﻿keys,pl,en,de,eo,hu
-POWROC,Powróć,Return,Zurück,Revenu,Visszatérjen
-POTWIERDZ,Potwierdź,Confirm,Bestätig,Konfirmu,Megerősíteni
+keys,pl,en,de,eo,hu
+POWRÓĆ,Powróć,Return,Zurück,Revenu,Visszatérjen
+POTWIERDŹ,Potwierdź,Confirm,Bestätigen,Konfirmu,Megerősíteni
 GRAJ,Graj,Play,Spiel,Ludu,Játssz
 USTAWIENIA,Ustawienia,Options,Die Einstellungen,Opcion,Beállítások 
 TWÓRCY,Twórcy,Creators,Die Schöpfer,Verkiston,Alkotóak
 WYJDŹ,Wyjdź,Exit,Verlass,Eliru,Hagyj
+GRAFIKA,Grafika,Graphics,,,
+DŹWIĘK,Dźwięk,Audio,,,
+STEROWANIE,Sterowanie,,,,
+JĘZYK,Język,Language,Sprache,,
+WRÓĆ,Wróć,Go back,Zurück,,

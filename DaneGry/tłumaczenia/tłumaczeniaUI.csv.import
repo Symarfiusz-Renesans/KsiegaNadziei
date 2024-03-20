@@ -7,10 +7,11 @@ uid="uid://c823b8560g7i6"
 [deps]
 
 files=["res://DaneGry/tłumaczenia/tłumaczeniaUI.pl.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.en.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.de.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.eo.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.hu.translation"]
+
 source_file="res://DaneGry/tłumaczenia/tłumaczeniaUI.csv"
 dest_files=["res://DaneGry/tłumaczenia/tłumaczeniaUI.pl.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.en.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.de.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.eo.translation", "res://DaneGry/tłumaczenia/tłumaczeniaUI.hu.translation"]
 
 [params]
 
-compress=true
+compress=false
 delimiter=0

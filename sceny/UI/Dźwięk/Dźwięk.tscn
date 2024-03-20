@@ -77,7 +77,7 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_cmrej")
-text = "Głośność główna"
+text = "GŁOŚNOŚĆ_GŁÓWNA"
 horizontal_alignment = 2
 
 [node name="suwakGGłówna" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGłównej"]
@@ -102,7 +102,7 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_cmrej")
-text = "Głośność Muzyki / Gędźby"
+text = "GŁOŚNOŚĆ_GĘDŹBY"
 horizontal_alignment = 2
 
 [node name="suwakGGędźby" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGGędźby"]
@@ -127,7 +127,7 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_cmrej")
-text = "Głośność Dżwięków"
+text = "GŁOŚNOŚĆ_DŹWIĘKÓW"
 horizontal_alignment = 2
 
 [node name="suwakGDźwięków" type="HSlider" parent="ColorRect/MarginContainer/KontenerGłówny/KontenerNaSuwakGDźwięków"]
@@ -161,7 +161,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_jkhhi")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_3bk3j")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_85w1e")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_wfw78")
-text = "Powróć"
+text = "POWRÓĆ"
 alignment = 2
 icon_alignment = 1
 expand_icon = true

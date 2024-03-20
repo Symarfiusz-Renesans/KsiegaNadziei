@@ -48,8 +48,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
-text = "Graj Dalej
-"
+text = "GRAJ_DALEJ"
 
 [node name="Ustawienia" type="Button" parent="kontenerNaPauzę/VBoxContainer"]
 layout_mode = 2
@@ -64,7 +63,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
-text = "Ustawienia"
+text = "USTAWIENIA"
 
 [node name="Wyjdź" type="Button" parent="kontenerNaPauzę/VBoxContainer"]
 layout_mode = 2
@@ -80,7 +79,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_i4ogx")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_w1kwt")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_l33q5")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_aslep")
-text = "Wyjdź z Gry"
+text = "WYJDŹ_Z_GRY"
 
 [connection signal="pressed" from="kontenerNaPauzę/VBoxContainer/Wróć" to="." method="_on_wróć_pressed"]
 [connection signal="pressed" from="kontenerNaPauzę/VBoxContainer/Ustawienia" to="." method="_on_ustawienia_pressed"]

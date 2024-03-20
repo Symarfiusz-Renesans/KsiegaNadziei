@@ -1,9 +1,29 @@
-[gd_scene load_steps=6 format=3 uid="uid://6d84et5ngeqf"]
+[gd_scene load_steps=8 format=3 uid="uid://6d84et5ngeqf"]
 
 [ext_resource type="Script" path="res://wtyczki/Postacie/GrywalnaPostać.gd" id="1_ouvxh"]
 [ext_resource type="PackedScene" uid="uid://dsvv561h1h23m" path="res://samoładowniki/Pauza.tscn" id="2_4mkl8"]
 [ext_resource type="Texture2D" uid="uid://cl6hol5lf726j" path="res://rysunki/postacie/boskiSędzia/boskiSędziaWMiejscu.png" id="2_rcgoh"]
 [ext_resource type="PackedScene" uid="uid://bc0eq1smevkrg" path="res://obiekty/postacie/BoskiSędzia/InterfejsGracza.tscn" id="3_4gyad"]
+[ext_resource type="Texture2D" uid="uid://b3bsog1mdbyul" path="res://rysunki/postacie/boskiSędzia/boskiSędziaZeSpluwą.png" id="3_pla4w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1r8au"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("2_rcgoh")
+}, {
+"duration": 2.0,
+"texture": ExtResource("3_pla4w")
+}],
+"loop": true,
+"name": &"Chodzenie",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"ChodzenieZBronią",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r3rjw"]
 size = Vector2(17, 64)
@@ -12,8 +32,10 @@ size = Vector2(17, 64)
 script = ExtResource("1_ouvxh")
 przyspieszenie = 1000
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_rcgoh")
+[node name="Animacja" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1r8au")
+animation = &"Chodzenie"
+frame_progress = 0.746376
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 0)

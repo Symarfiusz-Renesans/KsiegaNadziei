@@ -129,8 +129,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "WRÓĆ
-"
+text = "WRÓĆ"
 
 [connection signal="pressed" from="NaUstawienia/GłówneOpcje/Grafika" to="." method="_on_grafika_pressed"]
 [connection signal="pressed" from="NaUstawienia/GłówneOpcje/Dźwięk" to="." method="_on_dźwięk_pressed"]

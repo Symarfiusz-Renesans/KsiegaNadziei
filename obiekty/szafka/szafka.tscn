@@ -34,7 +34,7 @@ offset_right = 52.0
 offset_bottom = 13.0
 theme_override_fonts/font = ExtResource("4_ub444")
 theme_override_font_sizes/font_size = 8
-text = "Wejdź"
+text = "WEJDŹ"
 metadata/_edit_use_anchors_ = true
 
 [node name="Oczy" type="Sprite2D" parent="."]

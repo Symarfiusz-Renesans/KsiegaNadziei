@@ -12,5 +12,5 @@ dest_files=["res://DaneGry/tłumaczenia/tłumaczeniaUI.pl.translation", "res://D
 
 [params]
 
-compress=false
+compress=true
 delimiter=0

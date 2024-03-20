@@ -29,9 +29,9 @@ func _process(_delta):
 		oczy.visible = !bohater.visible
 		bohater.position = Vector2(self.position.x+64, self.position.y+96)
 		if bohater.visible:
-			label.text = "Wejdź"
+			label.text = "WEJDŹ"
 		else:
-			label.text = "Wyjdź"
+			label.text = "WYJDŹ"
 
 
 func _on_area_2d_body_entered(body):

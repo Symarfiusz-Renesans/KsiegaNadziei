@@ -15,7 +15,7 @@ script = ExtResource("1_eg2tf")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_mer7n")
-cell_quadrant_size = 32
+rendering_quadrant_size = 32
 format = 2
 layer_0/tile_data = PackedInt32Array(65536, 262144, 4)
 
@@ -37,7 +37,7 @@ offset_right = 52.0
 offset_bottom = 13.0
 theme_override_fonts/font = ExtResource("4_1py5e")
 theme_override_font_sizes/font_size = 8
-text = "Wejdź"
+text = "WEJDŹ"
 metadata/_edit_use_anchors_ = true
 
 [node name="Oczy" type="Sprite2D" parent="."]

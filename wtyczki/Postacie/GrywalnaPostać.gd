@@ -1,13 +1,16 @@
 @tool
 class_name GrywalnaPostać extends Postać
 
-@onready var sprite_2d = $Sprite2D
+@onready var animacja = $Animacja
 @onready var kojociCzasomierz = $KojociCzasomierz
 @onready var pauza = $Pauza
 @onready var wyświetlacz_o_postaci = $"WyświetlaczOPostaci"
 
 var czyByłNaZiemi = false
 var czyJeszczeNieSkoczył = true
+
+func _ready():
+	animacja.play("Chodzenie")
 
 func _process(_delta):
 	if pauza.is_visible_in_tree():
@@ -41,7 +44,7 @@ func kontrolaRuchu(delta):
 
 func żyworys(kier):
 	if (kier != 0):
-		sprite_2d.flip_h = (kier < 0)
+		animacja.flip_h = (kier < 0)
 
 func włączeniePlecaka():
 	pass

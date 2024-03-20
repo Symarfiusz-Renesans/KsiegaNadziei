@@ -58,7 +58,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "Grafika"
+text = "GRAFIKA"
 
 [node name="Dźwięk" type="Button" parent="NaUstawienia/GłówneOpcje"]
 layout_mode = 2
@@ -74,7 +74,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "Dźwięk"
+text = "DŹWIĘK"
 
 [node name="Sterowanie" type="Button" parent="NaUstawienia/GłówneOpcje"]
 layout_mode = 2
@@ -93,7 +93,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "Sterowanie"
+text = "STEROWANIE"
 
 [node name="Język" type="Button" parent="NaUstawienia/GłówneOpcje"]
 layout_mode = 2
@@ -111,7 +111,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "Język"
+text = "JĘZYK"
 
 [node name="Wróć" type="Button" parent="NaUstawienia/GłówneOpcje"]
 layout_mode = 2
@@ -129,7 +129,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_dfjb7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_h2uar")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_cyawl")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_gp6p6")
-text = "Wróć
+text = "WRÓĆ
 "
 
 [connection signal="pressed" from="NaUstawienia/GłówneOpcje/Grafika" to="." method="_on_grafika_pressed"]

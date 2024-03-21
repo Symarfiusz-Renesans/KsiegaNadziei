@@ -17,7 +17,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Chodzenie",
-"speed": 5.0
+"speed": 24.0
 }, {
 "frames": [],
 "loop": true,
@@ -35,7 +35,7 @@ przyspieszenie = 1000
 [node name="Animacja" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1r8au")
 animation = &"Chodzenie"
-frame_progress = 0.746376
+frame_progress = 0.307529
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, 0)
